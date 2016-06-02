@@ -1,8 +1,67 @@
-<head>
-<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<!DOCTYPE html>
+<style>
+    html body {
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        margin: 0;
+    }
+</style>
+<html lang=""><head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdn.gitcdn.xyz/cdn/angular/bower-material/v1.0.0/angular-material.css">
+   <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-aria.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-messages.min.js"></script>
+  <script src="https://cdn.gitcdn.xyz/cdn/angular/bower-material/v1.0.0/angular-material.js"></script>
+   <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-114/assets-cache.js"></script>
+   <script src="JS/script.js"></script>
+   <title>Max C</title>
 </head>
-<ul class="nav nav-tabs">
-  <li role="presentation" class="active"><a href="#">Home</a></li>
-  <li role="presentation"><a href="#">Profile</a></li>
-  <li role="presentation"><a href="#">Messages</a></li>
+<body>
+  <div id="bar">
+  </div>
+<div id="cssmenu">
+<ul>
+   <li class="active"><a href="#"><span>Home</span></a></li>
+   <li><a href="#"><span>Products</span></a></li>
+   <li><a href="#"><span>About me</span></a></li>
+   <li class="last"><a href="#"><span>Contact</span></a></li>
 </ul>
+</div>
+<div id="live">
+</div>
+<div id="social">
+  <div id="fb">
+  </div>
+  <a href="https://twitter.com/0auriga">
+  <div id="twitter">
+    <br>
+    30,000 <br> Followers
+  </div>
+  </a>
+  <a href="https://www.instagram.com/aurigax/">
+  <div id="instagram">
+    <br>
+    5,000,000 <br> Followers
+  </div>
+  </a>
+  </div>
+</div>
+<div ng-controller="gridListDemoCtrl as vm" flex="" ng-cloak="" class="gridListdemoDynamicTiles" ng-app="MyApp">
+  <md-grid-list md-cols-sm="1" md-cols-md="2" md-cols-gt-md="6" md-row-height-gt-md="1:1" md-row-height="4:3" md-gutter="8px" md-gutter-gt-sm="4px">
+
+    <md-grid-tile ng-repeat="tile in vm.tiles" md-rowspan="{{tile.span.row}}" md-colspan="{{tile.span.col}}" md-colspan-sm="1" ng-class="tile.background">
+      <md-icon md-svg-icon="{{tile.icon}}"></md-icon>
+      <md-grid-tile-footer><h3>{{tile.title}}</h3></md-grid-tile-footer>
+    </md-grid-tile>
+  </md-grid-list>
+</div>
+</body></html>
