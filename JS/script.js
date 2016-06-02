@@ -1,5 +1,6 @@
 
 angular
+
   .module('MyApp',['ngMaterial', 'ngMessages'])
   .controller('gridListDemoCtrl', function($scope) {
 
