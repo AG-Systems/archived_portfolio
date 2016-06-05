@@ -14,6 +14,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://cdn.gitcdn.xyz/cdn/angular/bower-material/v1.0.0/angular-material.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.min.js"></script>
@@ -31,29 +32,43 @@
 <div id="cssmenu">
 <ul>
    <li class="active"><a href="#"><span>Home</span></a></li>
-   <li><a href="#"><span>Products</span></a></li>
-   <li><a href="#"><span>About me</span></a></li>
-   <li class="last"><a href="#"><span>Contact</span></a></li>
+   <li><a href="products.html"><span>Products</span></a></li>
+   <li><a href="about.html"><span>About me</span></a></li>
+   <li class="last"><a href="contact.html"><span>Contact</span></a></li>
 </ul>
 </div>
 <div id="live">
 </div>
-<div id="social">
-  <div id="fb">
-  </div>
-  <a href="https://twitter.com/0auriga">
-  <div id="twitter">
-    <br>
-    30,000 <br> Followers
-  </div>
-  </a>
-  <a href="https://www.instagram.com/aurigax/">
-  <div id="instagram">
-    <br>
-    5,000,000 <br> Followers
-  </div>
-  </a>
-  </div>
+<div class="followers">
+    <div class="container">
+        <div class="row">
+                        <div class="fb_likes">
+                                <a href="https://www.facebook.com">
+                                <span>467,596</span> Friends
+                                </a>
+                            </div>
+                        <div class="tweet_follow">
+                                <a href="https://twitter.com/0auriga">
+                                <span>18</span> Followers
+                                </a>
+                            </div>
+                        <div class="instagram">
+                                <a href="https://www.instagram.com/aurigax/">
+                                <span>388,774</span> Followers
+                                </a>
+                            </div>
+                        <div class="youtube">
+                                <a href="https://www.youtube.com/channel/UCy8SRs5_8QEAhiYbb_pCrjQ">
+                                <span>770</span> Subscribers
+                                </a>
+                            </div>
+                        <div class="snapchat">
+                                <a href="https://www.snapchat.com">
+                                <span>Comming</span> Soon
+                                </a>
+                            </div>
+                    </div>
+    </div>
 </div>
 <div ng-controller="gridListDemoCtrl as vm" flex="" ng-cloak="" class="gridListdemoDynamicTiles" ng-app="MyApp">
   <md-grid-list md-cols-sm="1" md-cols-md="2" md-cols-gt-md="6" md-row-height-gt-md="1:1" md-row-height="4:3" md-gutter="8px" md-gutter-gt-sm="4px">

@@ -242,3 +242,80 @@
   text-align: right;
   font-family: 'Open Sans', sans-serif;
 }
+
+
+
+
+
+.followers {
+    background: #ffffff;
+    border-bottom: 1px solid #dbdbdb;
+    min-height: 83px;
+    font-size: 13px;
+    line-height: none;
+    font-weight: 100;
+    color: #101010;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.followers span {
+    font-size: 18px;
+    padding: 0 0px 0 0;
+    display: block;
+}
+.followers .fb_likes {
+    background: rgba(0, 0, 0, 0) url("images/fb_icon.jpg") no-repeat scroll left center;
+    float: left;
+    margin: 10px 0 10px 10px;
+    padding: 10px 10px 10px 40px;
+}
+.followers .tweet_follow {
+    background: rgba(0, 0, 0, 0) url("images/tweet_icon.jpg") no-repeat scroll left center;
+  float: left;
+    margin: 10px 0 10px 10px;
+    padding: 10px 10px 10px 40px;
+}
+.followers .members {
+    background: url(../images/icon_members.jpg) no-repeat left center;
+    padding: 10px 10px 10px 40px;
+   float: left;
+    margin: 10px 18px;
+}
+.followers .business {
+    background: url(../images/icon_business.jpg) no-repeat left center;
+    padding: 10px 5px 10px 40px;
+   // float: left;
+    margin: 10px 18px;
+}
+/*** new icon */
+.followers .instagram {
+    background: rgba(0, 0, 0, 0) url("images/instagram.png") no-repeat scroll left center;
+   float: left;
+    margin: 10px 0 10px 10px;
+    padding: 10px 10px 10px 40px;
+}
+.followers .youtube {
+    background: rgba(0, 0, 0, 0) url("images/youtube.png") no-repeat scroll left center;
+  float: left;
+    margin: 10px 0 10px 10px;
+    padding: 10px 10px 10px 40px;
+}
+.followers .meerkat {
+    background: rgba(0, 0, 0, 0) url("images/meerkat_icon.jpg") no-repeat scroll left center;
+ float: left;
+    margin: 10px 0 10px 10px;
+    padding: 10px 10px 10px 40px;
+}
+.followers .periscope {
+    background: rgba(0, 0, 0, 0) url("images/periscope_icon.jpg") no-repeat scroll left center;
+ float: left;
+    margin: 10px 0 10px 10px;
+    padding: 10px 10px 10px 40px;
+}
+.followers .snapchat {
+    background: rgba(0, 0, 0, 0) url("images/snapChat_img_new.png") no-repeat scroll left center / 36px auto;
+ float: left;
+    margin: 10px 0 10px 10px;
+    padding: 10px 10px 10px 40px;
+}
