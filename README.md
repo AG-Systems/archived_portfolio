@@ -1,3 +1,5 @@
 # Portfolio
 
-make site like tialopez.com
+Make site like tialopez.com
+
+Personal site
