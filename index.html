@@ -23,7 +23,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-messages.min.js"></script>
   <script src="https://cdn.gitcdn.xyz/cdn/angular/bower-material/v1.0.0/angular-material.js"></script>
    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-114/assets-cache.js"></script>
-   <script src="JS/script.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.0/angular-aria.min.js.map"></script>
    <title>Max C</title>
 </head>
 <body>
@@ -42,6 +42,11 @@
 <div class="followers">
     <div class="container">
         <div class="row">
+          <div class="linkedin">
+                <a href="https://www.linkedin.com/in/max-c-12b1a1103?trk=hp-identity-name">
+                  <span>1</span>Connections
+                </a>
+              </div>
                         <div class="fb_likes">
                                 <a href="https://www.facebook.com">
                                 <span>467,596</span> Friends
@@ -62,21 +67,71 @@
                                 <span>770</span> Subscribers
                                 </a>
                             </div>
+                         <div class="stackoverflow">
+                                    <a href="http://stackoverflow.com/users/5487345/auriga">
+                                    <span>180</span>Reputation
+                                    </a>
+                                </div>
                         <div class="snapchat">
                                 <a href="https://www.snapchat.com">
-                                <span>Coming</span> Soon
+                                <span>  &zwnj;  &zwnj;Coming</span>  Soon
                                 </a>
                             </div>
                     </div>
     </div>
 </div>
-<div ng-controller="gridListDemoCtrl as vm" flex="" ng-cloak="" class="gridListdemoDynamicTiles" ng-app="MyApp">
-  <md-grid-list md-cols-sm="1" md-cols-md="2" md-cols-gt-md="6" md-row-height-gt-md="1:1" md-row-height="4:3" md-gutter="8px" md-gutter-gt-sm="4px">
+<html ng-app="demo">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>ngFlowGrid</title>
 
-    <md-grid-tile ng-repeat="tile in vm.tiles" md-rowspan="{{tile.span.row}}" md-colspan="{{tile.span.col}}" md-colspan-sm="1" ng-class="tile.background">
-      <md-icon md-svg-icon="{{tile.icon}}"></md-icon>
-      <md-grid-tile-footer><h3>{{tile.title}}</h3></md-grid-tile-footer>
-    </md-grid-tile>
-  </md-grid-list>
-</div>
-</body></html>
+    <link rel="stylesheet" type="text/css" href="lib/bootstrap.min.css">
+
+    <script src="lib/angular.min.js"></script>
+    <script src="JS/ngFlowGrid.js"></script>
+    <script src="JS/app.js"></script>
+    <style type="text/css">
+    /*------------------------*/
+    .flowGrid{position: relative;padding: 0;}
+    .flowGrid:before,.flowGrid:after{
+        content: "";
+        display: table;
+    }
+    .flowGrid:after{
+        clear:both;
+    }
+    .flowGridItem{ list-style: none;}
+    .flowGridItem img{width:100%;}
+    .flowGridColumn{
+        float: left;
+        padding-left: 10px;
+    }
+    .flowGridColumn:last-of-type{
+        /*padding-right: 10px;*/
+    }
+    header{
+      background-color: #efefef;
+      margin-bottom: 25px;
+      height: 250px;
+      text-align: center;
+
+    }
+    </style>
+  </head>
+
+  <body ng-controller="appCtrl">
+    <section>
+      <div class="container">
+
+        <ul class="flowGrid" ng-flow-grid="demoGird" min-item-width="200">
+          <li class="flowGridItem" ng-repeat="item in items">
+              <a href="{{item.link}}"><img ng-src="{{item.img}}"></a>
+              <p>{{item.name}}</p>
+          </li>
+        </ul>
+
+      </div>
+    </section>
+  </body>
+</html>
