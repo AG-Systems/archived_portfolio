@@ -5,7 +5,7 @@ app.controller('appCtrl',['$scope','fgDelegate',function($scope,fgDelegate){
 		{
 			id:1,
 			img:'http://placehold.it/400x500/D25064/fff',
-			name:'Why assumptions are wrong',
+			name:'If You Want Something, You Must Go Get It',
 			link:'https://www.google.com/',
 		},
 		{
