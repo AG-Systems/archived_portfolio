@@ -270,7 +270,7 @@
 }
 #physics
 {
-  background-image: url("physics.png");
+  background-image: url("images/physics.png");
   height: 300px;
   width: 100%;
   display: inline-block;
@@ -305,4 +305,41 @@ li
   font-size: 50px;
   margin: 0 auto;
 
+}
+.panel h1
+{
+  font-size: 50px;
+}
+.contact
+{
+  width: 50%;
+  height: 500px;
+  margin: 0 auto;
+  vertical-align: center;
+  margin-top: 50px;
+  text-align: left;
+}
+.contact a
+{
+  text-align: left;
+}
+.contact #email
+{
+  font-size: 50px;
+  font-family: "Titillium Web", "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+.contact #github
+{
+  font-size: 50px;
+  font-family: "Titillium Web", "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+.phy h1
+{
+  color: #333333;
+  font-size: 40px;
+}
+.phy h2
+{
+  color: #333333;
+  font-size: 40px;
 }
