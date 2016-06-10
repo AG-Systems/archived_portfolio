@@ -1,5 +1,5 @@
 # Portfolio
 
-Current Personal site\
+Current Personal site
 
 Made in angularjs
