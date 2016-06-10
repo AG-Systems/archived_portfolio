@@ -14,7 +14,5 @@ app.controller('appCtrl',['$scope','fgDelegate',function($scope,fgDelegate){
 			name:'Test',
 			link:'https://www.google.com/',
 		},
-
 	]
-
 }]);
