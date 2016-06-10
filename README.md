@@ -1,5 +1,5 @@
 # Portfolio
 
-Make site like tialopez.com
+Current Personal site\
 
-Personal site
+Made in angularjs
