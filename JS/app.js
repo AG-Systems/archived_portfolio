@@ -85,3 +85,8 @@ app.controller('appCtrl',['$scope','fgDelegate',function($scope,fgDelegate){
 		},
 	]
 }]);
+
+$("#click").click(function()
+{
+		alert("Your book is overdue.");
+});
