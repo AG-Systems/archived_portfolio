@@ -394,3 +394,23 @@ li
     font-size: 20px;
     cursor: pointer;
 }
+#physics-more
+{
+  width: 100%;
+  height: 50%;
+  background-color: white;
+  text-align: center;
+  margin: 0 auto;
+}
+.physics-about li
+{
+  font-size: 25px;
+}
+.physics-about a
+{
+  font-size: 25px;
+}
+.physics-about p
+{
+  font-size: 25px;
+}
